@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-![formula](https://render.githubusercontent.com/render/math?math=\frac{W_r}{W})
+## <h1 style="color:white">![formula](https://render.githubusercontent.com/render/math?math=\frac{W_r}{W})</h1>
 
 <!--
 
