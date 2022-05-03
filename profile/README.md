@@ -46,8 +46,6 @@ The keras-ocr model mainly comprises 2 submodules: a text detection module and a
 
    The images we used for the training are generated from background randomly selected from a background pool consisting of about one thousand background images. After that, randomly generated words are drawn onto the background images to create artificial scene text images. 
 
-<br/>
-
 ### Dictionary APIs
 
 We used two different types of Merriam-webster APIs, Collegiate® Dictionary with Audio and Collegiate® Thesaurus, for looking up each word. We got information about meanings, sentence examples, part of speech, pronunciation and audio for Collegiate Dictionary, and additional synonyms, antonyms but no pronunciation and audio for Collegiate Thesaurus.
