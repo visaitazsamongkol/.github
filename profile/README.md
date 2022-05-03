@@ -26,7 +26,7 @@ Keras-ocr could provide satisfactory results for a text recognition task. The mo
 
 <hr/>
 
-## Method and results
+## Method
 
 ### Model
 
