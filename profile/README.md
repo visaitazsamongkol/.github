@@ -40,11 +40,11 @@ The keras-ocr model mainly comprises 2 submodules: a text detection module and a
  
    The architecture of the text recognition model is CRNN [2]. The input image is a cropped image containing a word region which will be passed into convolutional layers to extract feature and output feature maps. Then, The feature maps are vertically partitioned into sequential data and are inserted into bidirectional LSTM layers. Finally, the output from LSTM will be processed and transcripted into a word.
 
-   In order to train the model such that it can recognize punctuation, we replaced the head of the text recognition module with a new classification head and trained only the new inserted head.
+In order to train the model such that it can recognize punctuation, we replaced the head of the text recognition module with a new classification head and trained only the new inserted head.
 
-   We trained the model for 127 epochs with RMSProp as the optimizer, CTCLoss as the loss function, learning rate of 10-3, batch size of 224, and ReduceLROnPlateau as the learning rate scheduler with patience of 10, and STRAug [3] as augmentation.
+We trained the model for 127 epochs with RMSProp as the optimizer, CTCLoss as the loss function, learning rate of 10-3, batch size of 224, and ReduceLROnPlateau as the learning rate scheduler with patience of 10, and STRAug [3] as augmentation.
 
-   The images we used for the training are generated from background randomly selected from a background pool consisting of about one thousand background images. After that, randomly generated words are drawn onto the background images to create artificial scene text images. 
+The images we used for the training are generated from background randomly selected from a background pool consisting of about one thousand background images. After that, randomly generated words are drawn onto the background images to create artificial scene text images. 
 
 ### Dictionary APIs
 
